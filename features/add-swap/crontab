@@ -1,0 +1,2 @@
+* * * * * pgrep -f "/usr/bin/master-server" | while read PID; do echo -17 > /proc/$PID/oom_adj; done
+* * * * * pgrep -f "/usr/share/klippy-env/bin/python" | while read PID; do echo -17 > /proc/$PID/oom_adj; done
